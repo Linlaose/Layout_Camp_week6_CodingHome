@@ -8428,6 +8428,10 @@ fieldset:disabled .btn {
   width: 50% !important;
 }
 
+.w-52 {
+  width: 52% !important;
+}
+
 .w-75 {
   width: 75% !important;
 }
@@ -17325,6 +17329,10 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 nav {
   position: relative;
 }
@@ -17335,7 +17343,7 @@ nav::before {
   bottom: 0;
   background-color: #62DB54;
   width: 50%;
-  height: 5px;
+  height: 2px;
 }
 
 nav::after {
@@ -17345,7 +17353,7 @@ nav::after {
   right: 0;
   background-color: #09ACF5;
   width: 50%;
-  height: 5px;
+  height: 2px;
 }
 
 body {
@@ -17378,6 +17386,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
+  margin: 0;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
@@ -17408,6 +17417,73 @@ small, .small {
 .header-a {
   font-size: 18px;
   line-height: 1.44;
+}
+
+@media (min-width: 992px) {
+  .w-lg-52 {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .w-lg-52 {
+    width: 50%;
+  }
+}
+
+.color-gradient {
+  background: #62db54;
+  background: -webkit-gradient(linear, left bottom, left top, from(#62db54), to(#09acf5));
+  background: -o-linear-gradient(bottom, #62db54 0%, #09acf5 100%);
+  background: linear-gradient(0deg, #62db54 0%, #09acf5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.el-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.top-left {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: -5px;
+}
+
+.top-right {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: -5px;
+}
+
+.bottom-left {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  bottom: -5px;
+  left: -5px;
+}
+
+.bottom-right {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  bottom: -5px;
+  right: -5px;
 }
 
 .hover-pointer-opacity {
