@@ -1,0 +1,11 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap');
+@import './base/reset';
+@import './base/typograph';
+@import './utils/helpers';
+@import './components/buttons';
+@import './layout/header';
+@import './pages/index';

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body class="bg-primary">
+    <header class="bg-secondary">
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary p-0">
+        <div
+          class="container d-flex justify-content-between p-0 py-6 px-3 mx-auto"
+        >
+          <a href="#">
+            <img class="logo-size" src="./assets/images/logo.svg" alt="logo" />
+          </a>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="d-flex gap-12">
+              <li class="nav-item">
+                <a
+                  class="active text-white header-a hover-pointer-opacity"
+                  aria-current="page"
+                  href="#"
+                  >首頁</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="text-white header-a hover-pointer-opacity" href="#"
+                  >課程介紹</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="text-white header-a hover-pointer-opacity">
+                  <i class="material-icons align-middle me-1">
+                    account_circle </i
+                  >登入
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <%- contents %>
+
+    <footer class="bg-secondary py-6 text-center">
+      <small>Coding Home © 2022 All Rights Reserved</small>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>

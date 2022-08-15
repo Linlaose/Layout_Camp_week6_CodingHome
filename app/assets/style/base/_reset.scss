@@ -1,0 +1,30 @@
+a{
+  text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav{
+  position: relative;
+  &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      background-color: #62DB54;
+      width: 50%;
+      height: 5px;
+    }
+  &::after{
+    content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #09ACF5;
+      width: 50%;
+      height: 5px;
+  }
+}
