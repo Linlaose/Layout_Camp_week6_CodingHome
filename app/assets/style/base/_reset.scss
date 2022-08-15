@@ -8,6 +8,10 @@ ul{
   list-style: none;
 }
 
+img{
+  max-width: 100%;
+}
+
 nav{
   position: relative;
   &::before {

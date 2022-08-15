@@ -8,6 +8,66 @@
   line-height: 1.44;
 }
 
+.w-lg-52{
+  @media (min-width: 992px) {
+    width: 70%;
+  }
+  @media (min-width: 1200px) {
+    width: 50%;
+  }
+}
+
+// 文字漸層
+.color-gradient {
+  background: rgb(98, 219, 84);
+  background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+// 元素置中
+.el-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// h1 邊界四方塊
+.top-left {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  left: -5px;
+}
+.top-right {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: -5px;
+}
+.bottom-left {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  bottom: -5px;
+  left: -5px;
+}
+.bottom-right {
+  position: absolute;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  bottom: -5px;
+  right: -5px;
+}
+
 // variant
 .hover-pointer-opacity{
   cursor: pointer;
