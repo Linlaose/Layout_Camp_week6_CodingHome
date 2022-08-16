@@ -15237,6 +15237,10 @@ small, .small {
   border-radius: 12px;
 }
 
+.border-transparent {
+  border: 1px solid transparent;
+}
+
 .border-gray {
   border-top: 1px solid #C1C1C1 !important;
 }
@@ -15322,6 +15326,11 @@ small, .small {
   padding-left: 23px;
 }
 
+.padding-y-216 {
+  padding-top: 216px;
+  padding-bottom: 216px;
+}
+
 @media (min-width: 992px) {
   .w-lg-70 {
     width: 70%;
@@ -15394,6 +15403,34 @@ small, .small {
   height: 10px;
   bottom: -5px;
   right: -5px;
+}
+
+.bg-image-project {
+  height: 615px;
+  background-image: url("../images/info01.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-image-motivate {
+  height: 615px;
+  background-image: url("../images/info02.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-image-efficiency {
+  height: 615px;
+  background-image: url("../images/info03.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-image-advising {
+  height: 615px;
+  background-image: url("../images/info04.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
 .hover-pointer-opacity {
