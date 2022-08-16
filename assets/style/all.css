@@ -15160,6 +15160,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
+  margin: 0;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.45;
@@ -15181,6 +15182,7 @@ mark, .mark {
 strong {
   font-size: 32px;
   line-height: 1.16;
+  font-weight: normal;
 }
 
 small, .small {
@@ -15208,6 +15210,15 @@ small, .small {
   line-height: 1.44;
 }
 
+.w-14p66 {
+  width: 14.66%;
+}
+
+.profile-size {
+  width: 100px;
+  height: 100px;
+}
+
 .border-w-1 {
   border: 1px solid transparent;
   border-radius: 12px;
@@ -15219,13 +15230,6 @@ small, .small {
   -webkit-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  background: #62db54;
-  background: -webkit-gradient(linear, left bottom, left top, from(#62db54), to(#09acf5));
-  background: -o-linear-gradient(bottom, #62db54 0%, #09acf5 100%);
-  background: linear-gradient(0deg, #62db54 0%, #09acf5 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 .number-border {
@@ -15233,10 +15237,8 @@ small, .small {
   border-radius: 12px;
 }
 
-.mask-gray {
-  width: 100%;
-  height: inherit;
-  background-color: #00000058;
+.border-gray {
+  border-top: 1px solid #C1C1C1 !important;
 }
 
 .border-bottom-green {
@@ -15272,6 +15274,34 @@ small, .small {
           transform: translate(-50%, 0);
 }
 
+.border-radius-8 {
+  border-radius: 8px;
+}
+
+.border-radius-24 {
+  border-radius: 24px;
+}
+
+.border-radius50 {
+  border-radius: 50%;
+}
+
+.mask-gray {
+  width: 100%;
+  height: inherit;
+  background-color: #00000058;
+}
+
+.programming-language {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: bold;
+}
+
+.notosans-regular {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: normal;
+}
+
 .number-position {
   position: absolute;
   top: -28px;
@@ -15283,8 +15313,13 @@ small, .small {
   background-color: #1C1C1C;
 }
 
-.w-14p66 {
-  width: 14.66%;
+.padding-t-37 {
+  padding-top: 37px;
+}
+
+.padding-x-23 {
+  padding-right: 23px;
+  padding-left: 23px;
 }
 
 @media (min-width: 992px) {
@@ -15307,6 +15342,13 @@ small, .small {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.btn-gradient {
+  background: #62db54;
+  background: -webkit-gradient(linear, right top, left top, from(#62db54), to(#09acf5));
+  background: -o-linear-gradient(right, #62db54 0%, #09acf5 100%);
+  background: linear-gradient(270deg, #62db54 0%, #09acf5 100%);
 }
 
 .el-center {
