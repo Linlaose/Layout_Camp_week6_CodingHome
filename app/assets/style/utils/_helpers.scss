@@ -37,6 +37,7 @@
   height: 42px;
 }
 
+// border
 .border-w-1{
   border: 1px solid transparent;
   border-radius: 12px;
@@ -86,6 +87,7 @@
     }
 }
 
+// border-radius
 .border-radius-8{
   border-radius: 8px;
 }
@@ -98,16 +100,15 @@
   border-radius: 50%;
 }
 
+// bg-color
 .bg-black{
   background-color: #000;
 }
-
-.mask-gray {
-  width: 100%;
-  height: inherit;
-  background-color: #00000058;
+.bg-2D2D2D {
+  background-color: #2D2D2D;
 }
 
+// font-family
 .programming-language{
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: bold;
@@ -117,6 +118,7 @@
   font-weight: normal;
 }
 
+// position
 .number-position{
   position: absolute;
   top: -28px;
@@ -128,6 +130,7 @@
   background-color: #1C1C1C;
 }
 
+// padding
 .padding-t-37{
   padding-top: 37px;
 }
@@ -155,13 +158,13 @@
 }
 
 // 文字漸層
-.color-gradient {
-  background: rgb(98, 219, 84);
-  background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
+// .color-gradient {
+//   background: rgb(98, 219, 84);
+//   background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
+//   background-clip: text;
+//   -webkit-background-clip: text;
+//   color: transparent;
+// }
 .btn-gradient{
   background: rgb(98, 219, 84);
   background: linear-gradient(270deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
@@ -210,6 +213,13 @@
 }
 
 // background-image
+.bg-image-banner{
+  max-width: 100%;
+  height: 680px;
+  background-image: url('../images/bg_home.jpg');
+  background-size: cover;
+  background-position: center center;
+}
 .bg-image-project{
   height: 615px;
   background-image: url('../images/info01.jpg');
@@ -249,3 +259,23 @@
     opacity: .8;
   }
 }
+
+.hover-color-gradient{
+  opacity: .5;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  &:hover{
+    border: 1px solid #62DB54;
+    transition: border .5s ease-in-out;
+    opacity: 1;
+    background: #000;
+    .color-gradient {
+      background: rgb(98, 219, 84);
+      background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}//手把手帶你
