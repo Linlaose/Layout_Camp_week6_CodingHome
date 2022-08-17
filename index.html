@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
@@ -58,18 +62,15 @@
 
     
 <main>
-  <section class="container mt-20 mx-auto p-0 px-3">
+  <section
+    class="container-fluid mx-auto p-0 px-3 bg-image-banner d-flex align-items-center"
+  >
     <!-- banner -->
-    <div class="position-relative m-0">
+    <div class="container">
       <div class="row">
-        <div class="col-12">
-          <img src="./assets/images/bg_home.jpg" alt="Background Image" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
+        <div class="col-6 offset-lg-3">
           <h1
-            class="el-center text-center m-0 text-white px-20 py-12 w-lg-70 border border-1 border-white"
+            class="text-center m-0 text-white py-12 border border-1 border-white position-relative"
           >
             <span class="color-gradient">全台最豐富的程式家教</span
             ><br />在實踐中化理想為現實
@@ -85,58 +86,53 @@
       </div>
     </div>
   </section>
-  <!-- banner end (最後再回來調整 img 標籤改為 background-image) -->
-  <section class="container mt-17 p-0 px-3 py-20">
+  <!-- banner end -->
+  <section class="container-fluid py-20 bg-2D2D2D">
     <!-- our advantage -->
-    <!-- <div class="mask-gray"></div> 遮罩回頭再使用 -->
-    <div class="row">
-      <div class="col-lg-2 d-flex align-items-center">
-        <h2 class="text-white border-bottom-green">
-          手把手帶你<br />親自到家教到會
-        </h2>
-      </div>
-      <div class="col-lg-3 offset-lg-1">
-        <div>
-          <div
-            class="card-body text-center py-12 px-6 bg-primary text-white border-w-1"
-          >
-            <span class="material-icons icon-size-50 color-gradient">
-              code
-            </span>
-            <h5 class="card-subtitle mt-6">超過 100 種專業課程</h5>
-            <p class="card-text card-text-size-18 mt-4">
-              學習標準化的電腦形式語言<br />培養運算思維和邏輯素養
-            </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 d-flex align-items-center">
+          <h2 class="text-white border-bottom-green">
+            手把手帶你<br />親自到家教到會
+          </h2>
+        </div>
+        <div class="col-lg-3 offset-lg-1">
+          <div>
+            <div class="card-body text-center py-12 px-6 hover-color-gradient">
+              <span class="material-icons icon-size-50 color-gradient">
+                code
+              </span>
+              <h5 class="card-subtitle mt-6">超過 100 種專業課程</h5>
+              <p class="card-text card-text-size-18 mt-4">
+                學習標準化的電腦形式語言<br />培養運算思維和邏輯素養
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3">
-        <div>
-          <div
-            class="card-body text-center py-12 px-6 bg-primary text-white border-w-1"
-          >
-            <span class="material-icons icon-size-50 color-gradient">
-              rocket_launch
-            </span>
-            <h5 class="card-subtitle mt-6">高效學習</h5>
-            <p class="card-text card-text-size-18 mt-4">
-              客製化專屬課表<br />讓學習變簡單
-            </p>
+        <div class="col-lg-3">
+          <div>
+            <div class="card-body text-center py-12 px-6 hover-color-gradient">
+              <span class="material-icons icon-size-50 color-gradient">
+                rocket_launch
+              </span>
+              <h5 class="card-subtitle mt-6">高效學習</h5>
+              <p class="card-text card-text-size-18 mt-4">
+                客製化專屬課表<br />讓學習變簡單
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3">
-        <div>
-          <div
-            class="card-body text-center py-12 px-6 bg-primary text-white border-w-1"
-          >
-            <span class="material-icons icon-size-50 color-gradient">
-              fmd_good
-            </span>
-            <h5 class="card-subtitle mt-6">指定地點</h5>
-            <p class="card-text card-text-size-18 mt-4">
-              專業老師到你指定的地點<br />一對一高效學習
-            </p>
+        <div class="col-lg-3">
+          <div>
+            <div class="card-body text-center py-12 px-6 hover-color-gradient">
+              <span class="material-icons icon-size-50 color-gradient">
+                fmd_good
+              </span>
+              <h5 class="card-subtitle mt-6">指定地點</h5>
+              <p class="card-text card-text-size-18 mt-4">
+                專業老師到你指定的地點<br />一對一高效學習
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -206,114 +202,89 @@
     </div>
   </section>
   <!-- expected teaching pase end -->
-  <section class="container-fluid mt-20 pt-20 pb-20 bg-secondary">
+  <section class="container-fluid mt-20 pt-20 pb-20 bg-2D2D2D">
     <!-- programming-language -->
     <h2 class="border-bottom-green-center text-center text-white">
       你想要學習的程式，都在這裡
     </h2>
-    <div class="row mt-16">
-      <div class="col ps-6">
-        <div
-          id="carouselExampleControlsNoTouching"
-          class="carousel slide"
-          data-bs-touch="true"
-          data-bs-interval="false"
+    <!-- Slider main container -->
+    <div class="swiper ps-3 pt-16">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
         >
-          <div class="carousel-inner gap-4 d-flex">
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                JavaScript
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                HTML/CSS
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                SQL
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                Java
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                SQL
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                Bash/Shell
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                Python
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                Python
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                PHP
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                C++
-              </button>
-            </div>
-            <div class="carousel-item active d-inline-block">
-              <button
-                type="button"
-                class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language"
-              >
-                C#
-              </button>
-            </div>
-          </div>
-        </div>
+          JavaScript
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          HTML/CSS
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          SQL
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          Java
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          SQL
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          Bash/Shell
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          Python
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          Python
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          PHP
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          C++
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-success text-white py-6 px-8 border border-1 border border-radius-8 programming-language swiper-slide notosans-bold"
+        >
+          C#
+        </button>
       </div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </div>
   </section>
-  <!-- programming-language end (輪播功能還需調整可觸碰滑動) -->
+  <!-- programming-language end -->
   <section class="container py-20">
     <!-- suggested courses -->
     <h2 class="border-bottom-green-center text-center text-white">
@@ -503,65 +474,102 @@
     </ul>
   </section>
   <!-- advantage cards end (還需要補上遮罩與 js) -->
-  <section class="container py-20">
-    <!-- article -->
-    <h2 class="border-bottom-green-center text-center text-white">文章分享</h2>
-    <div class="row mt-16">
-      <div class="col-4">
-        <div class="card border-transparent bg-primary">
-          <img
-            src="./assets/images/article01.jpg"
-            class="card-img-top px-8 pt-8"
-            alt="article-1"
-          />
-          <div class="card-body pb-8 px-8">
-            <h5 class="card-title pt-4 text-white m-0">
-              2022 前端開發者學習地圖
-            </h5>
-            <p class="card-text pt-4 text-white m-0">
-              轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考
-            </p>
-            <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
+  <div class="container-fluid bg-secondary">
+    <section class="container py-20">
+      <!-- article -->
+      <h2 class="border-bottom-green-center text-center text-white">
+        文章分享
+      </h2>
+      <div class="row mt-16">
+        <div class="col-4">
+          <div class="card border-transparent bg-secondary">
+            <img
+              src="./assets/images/article01.jpg"
+              class="card-img-top px-8 pt-8"
+              alt="article-1"
+            />
+            <div class="card-body pb-8 px-8">
+              <h5 class="card-title pt-4 text-white m-0">
+                2022 前端開發者學習地圖
+              </h5>
+              <p class="card-text pt-4 text-white m-0">
+                轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考
+              </p>
+              <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-transparent bg-secondary">
+            <img
+              src="./assets/images/article02.jpg"
+              class="card-img-top px-8 pt-8"
+              alt="article-2"
+            />
+            <div class="card-body pb-8 px-8">
+              <h5 class="card-title pt-4 text-white m-0">
+                軟體工程師有哪些類別
+              </h5>
+              <p class="card-text pt-4 text-white m-0">
+                軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務
+              </p>
+              <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-transparent bg-secondary">
+            <img
+              src="./assets/images/article03.jpg"
+              class="card-img-top px-8 pt-8"
+              alt="article-3"
+            />
+            <div class="card-body pb-8 px-8">
+              <h5 class="card-title pt-4 text-white m-0">
+                免費 25 小時前端教學資源
+              </h5>
+              <p class="card-text pt-4 text-white m-0">
+                這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程
+              </p>
+              <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="card border-transparent bg-primary">
-          <img
-            src="./assets/images/article02.jpg"
-            class="card-img-top px-8 pt-8"
-            alt="article-2"
-          />
-          <div class="card-body pb-8 px-8">
-            <h5 class="card-title pt-4 text-white m-0">軟體工程師有哪些類別</h5>
-            <p class="card-text pt-4 text-white m-0">
-              軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務
-            </p>
-            <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card border-transparent bg-primary">
-          <img
-            src="./assets/images/article03.jpg"
-            class="card-img-top px-8 pt-8"
-            alt="article-3"
-          />
-          <div class="card-body pb-8 px-8">
-            <h5 class="card-title pt-4 text-white m-0">
-              免費 25 小時前端教學資源
-            </h5>
-            <p class="card-text pt-4 text-white m-0">
-              這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程
-            </p>
-            <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
-          </div>
-        </div>
-      </div>
+    </section>
+  </div>
+  <!-- article end (還需要加上四圓角 border) -->
+  <div class="container-fluid bg-image-swiper">
+    <!-- swiper -->
+    <section class="container py-20">
+      <h2 class="border-bottom-green-center text-center text-white">
+        專屬你的學習課程<br />超過 3000 位學員得到了程式超能力
+      </h2>
+      <div class="swiper"></div>
+    </section>
+  </div>
+  <!-- swiper end (輪播功能還沒加上) -->
+  <section
+    class="container-fluid text-white d-flex justify-content-between bg-black pb-20"
+  >
+    <div
+      class="container d-flex justify-content-center align-items-center p-12 w-70 border-radius-24 bg-secondary"
+    >
+      <i class="material-icons icon-book-size opacity-50">menu_book</i>
+      <h2 class="ms-12">
+        加入我們成為導師
+        <p class="card-text-size-18 m-0">
+          歡迎各大程式大神加入我們，用知識在世界留下一點影響力。
+        </p>
+      </h2>
+      <button
+        type="button"
+        class="btn btn-outline-success py-2 px-8 border-white btn-height-42 ms-25 card-text-size-18 text-white"
+      >
+        立即預約
+      </button>
     </div>
   </section>
-  <!-- article end (還需要加上四圓角 border) -->
 </main>
 
 
@@ -569,6 +577,7 @@
       <small>Coding Home © 2022 All Rights Reserved</small>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
