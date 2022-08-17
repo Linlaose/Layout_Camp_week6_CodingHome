@@ -3,6 +3,10 @@
   height: 42px;
 }
 
+.icon-book-size{
+  font-size: 80px;
+}
+
 .header-a{
   font-size: 18px;
   line-height: 1.44;
@@ -20,10 +24,17 @@
 .w-14p66 {
   width: 14.66%;
 }
+.w-70{
+  width: 70%;
+}
 
 .profile-size{
   width: 100px;
   height: 100px;
+}
+
+.btn-height-42{
+  height: 42px;
 }
 
 .border-w-1{
@@ -87,6 +98,10 @@
   border-radius: 50%;
 }
 
+.bg-black{
+  background-color: #000;
+}
+
 .mask-gray {
   width: 100%;
   height: inherit;
@@ -125,6 +140,9 @@
   padding-bottom: 216px;
 }
 
+.opacity-50{
+  opacity: 50%;
+}
 
 // banner-img width
 .w-lg-70{
@@ -213,6 +231,13 @@
 .bg-image-advising{
   height: 615px;
   background-image: url('../images/info04.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.bg-image-swiper{
+  height: 733px;
+  background-image: url('../images/bg_share.jpg');
   background-position: center center;
   background-size: cover;
 }

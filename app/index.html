@@ -451,63 +451,100 @@ current: index
     </ul>
   </section>
   <!-- advantage cards end (還需要補上遮罩與 js) -->
-  <section class="container py-20">
-    <!-- article -->
-    <h2 class="border-bottom-green-center text-center text-white">文章分享</h2>
-    <div class="row mt-16">
-      <div class="col-4">
-        <div class="card border-transparent bg-primary">
-          <img
-            src="./assets/images/article01.jpg"
-            class="card-img-top px-8 pt-8"
-            alt="article-1"
-          />
-          <div class="card-body pb-8 px-8">
-            <h5 class="card-title pt-4 text-white m-0">
-              2022 前端開發者學習地圖
-            </h5>
-            <p class="card-text pt-4 text-white m-0">
-              轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考
-            </p>
-            <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
+  <div class="container-fluid bg-secondary">
+    <section class="container py-20">
+      <!-- article -->
+      <h2 class="border-bottom-green-center text-center text-white">
+        文章分享
+      </h2>
+      <div class="row mt-16">
+        <div class="col-4">
+          <div class="card border-transparent bg-secondary">
+            <img
+              src="./assets/images/article01.jpg"
+              class="card-img-top px-8 pt-8"
+              alt="article-1"
+            />
+            <div class="card-body pb-8 px-8">
+              <h5 class="card-title pt-4 text-white m-0">
+                2022 前端開發者學習地圖
+              </h5>
+              <p class="card-text pt-4 text-white m-0">
+                轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考
+              </p>
+              <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-transparent bg-secondary">
+            <img
+              src="./assets/images/article02.jpg"
+              class="card-img-top px-8 pt-8"
+              alt="article-2"
+            />
+            <div class="card-body pb-8 px-8">
+              <h5 class="card-title pt-4 text-white m-0">
+                軟體工程師有哪些類別
+              </h5>
+              <p class="card-text pt-4 text-white m-0">
+                軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務
+              </p>
+              <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card border-transparent bg-secondary">
+            <img
+              src="./assets/images/article03.jpg"
+              class="card-img-top px-8 pt-8"
+              alt="article-3"
+            />
+            <div class="card-body pb-8 px-8">
+              <h5 class="card-title pt-4 text-white m-0">
+                免費 25 小時前端教學資源
+              </h5>
+              <p class="card-text pt-4 text-white m-0">
+                這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程
+              </p>
+              <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-4">
-        <div class="card border-transparent bg-primary">
-          <img
-            src="./assets/images/article02.jpg"
-            class="card-img-top px-8 pt-8"
-            alt="article-2"
-          />
-          <div class="card-body pb-8 px-8">
-            <h5 class="card-title pt-4 text-white m-0">軟體工程師有哪些類別</h5>
-            <p class="card-text pt-4 text-white m-0">
-              軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務
-            </p>
-            <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="card border-transparent bg-primary">
-          <img
-            src="./assets/images/article03.jpg"
-            class="card-img-top px-8 pt-8"
-            alt="article-3"
-          />
-          <div class="card-body pb-8 px-8">
-            <h5 class="card-title pt-4 text-white m-0">
-              免費 25 小時前端教學資源
-            </h5>
-            <p class="card-text pt-4 text-white m-0">
-              這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程
-            </p>
-            <a href="#" class="text-success pt-4 d-block text-end">MORE</a>
-          </div>
-        </div>
-      </div>
+    </section>
+  </div>
+  <!-- article end (還需要加上四圓角 border) -->
+  <div class="container-fluid bg-image-swiper">
+    <!-- swiper -->
+    <section class="container py-20">
+      <h2 class="border-bottom-green-center text-center text-white">
+        專屬你的學習課程<br />超過 3000 位學員得到了程式超能力
+      </h2>
+      <div class="swiper"></div>
+    </section>
+  </div>
+  <!-- swiper end (輪播功能還沒加上) -->
+  <section
+    class="container-fluid text-white d-flex justify-content-between bg-black pb-20"
+  >
+    <div
+      class="container d-flex justify-content-center align-items-center p-12 w-70 border-radius-24 bg-secondary"
+    >
+      <i class="material-icons icon-book-size opacity-50">menu_book</i>
+      <h2 class="ms-12">
+        加入我們成為導師
+        <p class="card-text-size-18 m-0">
+          歡迎各大程式大神加入我們，用知識在世界留下一點影響力。
+        </p>
+      </h2>
+      <button
+        type="button"
+        class="btn btn-outline-success py-2 px-8 border-white btn-height-42 ms-25 card-text-size-18 text-white"
+      >
+        立即預約
+      </button>
     </div>
   </section>
-  <!-- article end (還需要加上四圓角 border) -->
 </main>
