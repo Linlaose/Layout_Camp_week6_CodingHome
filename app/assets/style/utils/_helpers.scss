@@ -105,11 +105,12 @@
 .border-radius-8{
   border-radius: 8px;
 }
-
+.border-radius-10{
+  border-radius: 10px;
+}
 .border-radius-24{
   border-radius: 24px;
 }
-
 .border-radius50{
   border-radius: 50%;
 }
@@ -173,13 +174,13 @@
 }
 
 // 文字漸層
-// .color-gradient {
-//   background: rgb(98, 219, 84);
-//   background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
-//   background-clip: text;
-//   -webkit-background-clip: text;
-//   color: transparent;
-// }
+.text-color-gradient {
+  background: rgb(98, 219, 84);
+  background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 .btn-gradient{
   background: rgb(98, 219, 84);
   background: linear-gradient(270deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
@@ -352,6 +353,9 @@
 }//手把手帶你
 
 // 四大滿版區塊
+.height-615{
+  height: 615px;
+}
 .hover-opacity-bottom-green{
   &:hover{
     .hover-opacity-100 {
@@ -375,3 +379,68 @@
     }//icon
   }
 }//四大滿版區塊
+
+// 四角落圓角 border
+.hover-border-radius{
+  &:hover{
+    .top-left-radius {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      border-top: 2px solid #62DB54;
+      border-left: 2px solid #62DB54;
+      border-radius: 10px 0 0 0;
+      transition: border .1s;
+    }
+    .top-right-radius {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top: 2px solid #62DB54;
+      border-right: 2px solid #62DB54;
+      border-radius: 0 10px 0 0;
+      width: 32px;
+      height: 32px;
+      transition: border .1s;
+    }
+    
+    .bottom-left-radius {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-bottom: 2px solid #62DB54;
+      border-left: 2px solid #62DB54;
+      border-radius: 0 0 0 10px;
+      width: 32px;
+      height: 32px;
+      transition: border .1s;
+    }
+    
+    .bottom-right-radius {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-bottom: 2px solid #62DB54;
+      border-right: 2px solid #62DB54;
+      border-radius: 0 0 10px 0;
+      width: 32px;
+      height: 32px;
+      transition: border .1s;
+    }
+  }
+}
+
+//a 標籤擴展
+.stretched-link{
+  &::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
