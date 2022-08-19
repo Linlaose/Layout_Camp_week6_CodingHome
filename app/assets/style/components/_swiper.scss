@@ -1,4 +1,105 @@
+.bg-image-swiper {
+  height: 733px;
+  background-image: url('../images/bg_share.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+// swiper-wrapper 高度
+.height-429 {
+  height: 429px;
+}
+
+// 輪播圖片大小
+.swipe-img {
+  img {
+    width: 60%;
+    height: 381px;
+    object-fit: cover;
+    border-radius: 24px;
+
+    &~.img-border {
+      width: 60%;
+      height: 381px;
+      position: absolute;
+      top: 10px;
+      left: -10px;
+      z-index: -1;
+      border: 1px solid #7C7E77;
+      border-radius: 24px;
+    }
+  }
+}
+
+// 為了顯示 swiper 外的 border，必須取消套件預設的 hidden
 .swiper {
-  width: auto;
-  height: auto;
+  overflow: visible;
+}
+
+// 卡片樣式
+.swipe-card-text {
+  position: absolute;
+  bottom: 0;
+  right: -24px;
+  background-color: #fff;
+  width: 416px;
+  height: 178px;
+  border-radius: 24px 24px 24px 0;
+
+  &-img {
+    position: absolute;
+    top: -50px;
+    right: 32px;
+    max-width: 100px;
+    border-radius: 50%;
+  }
+}
+
+// 上一頁
+.swiper-button-prev::after {
+  content: ""; //消除預設箭頭
+  font-size: 0; //使外層區塊可以與 icon 一致
+}
+.btn-prev-position {
+  position: absolute;
+  top: 100%;
+  left: 196px;
+}
+
+// 下一頁
+.swiper-button-next::after {
+  content: ""; //消除預設箭頭
+  font-size: 0; //使外層區塊可以與 icon 一致
+}
+.btn-next-position {
+  position: absolute;
+  top: 100%;
+  left: 316px;
+}
+
+// 頁次樣式 
+.swiper-pagination-custom {
+  position: absolute;
+  width: auto !important;
+  bottom: 0 !important;
+  left: 236px !important;
+}
+.swiper-pagination-bullet {
+  background-color: #62DB54;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  width: 16px;
+  border-radius: 8px;
+}
+
+// 客製箭頭綠色
+.text-green {
+  color: #62DB54;
+}
+
+// 客製箭頭大小
+.icon-size {
+  width: 24px;
+  height: 24px;
 }
