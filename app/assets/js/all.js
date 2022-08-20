@@ -47,7 +47,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-const shareSwiper = new Swiper('.shareSwiper', {
+const shareSwiper = new Swiper('.swiper-share', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -65,14 +65,14 @@ const shareSwiper = new Swiper('.shareSwiper', {
   },
 
   // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
 
   // Autoplay
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
 
   // Fade
   effect: 'fade',
@@ -80,3 +80,5 @@ const shareSwiper = new Swiper('.shareSwiper', {
     crossFade: true
   },
 });
+
+// 在使用第二個 swiper 的使用記得要把 HTML 那邊的 .swiper 也改掉，不然會一次吃兩個 swiper

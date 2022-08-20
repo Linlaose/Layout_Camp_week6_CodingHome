@@ -12,15 +12,18 @@
 
 // 輪播圖片大小
 .swipe-img {
+  position: relative;
+  width: 60%;
+  height: 90%;
   img {
-    width: 60%;
-    height: 381px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 24px;
 
     &~.img-border {
-      width: 60%;
-      height: 381px;
+      width: 100%;
+      height: 100%;
       position: absolute;
       top: 10px;
       left: -10px;
@@ -40,10 +43,9 @@
 .swipe-card-text {
   position: absolute;
   bottom: 0;
-  right: -24px;
+  right: 0;
   background-color: #fff;
-  width: 416px;
-  height: 178px;
+  width: 45%;
   border-radius: 24px 24px 24px 0;
 
   &-img {
@@ -55,34 +57,54 @@
   }
 }
 
+// 頁數控制容器
+.swiper-buttons{
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  display: flex;
+  transform: translate(-50%);
+}
 // 上一頁
+.swiper-button-prev{
+  position: unset;
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
+}
 .swiper-button-prev::after {
   content: ""; //消除預設箭頭
   font-size: 0; //使外層區塊可以與 icon 一致
 }
-.btn-prev-position {
-  position: absolute;
-  top: 100%;
-  left: 196px;
-}
+// .btn-prev-position {
+//   position: absolute;
+//   top: 100%;
+//   left: 196px;
+// }
 
 // 下一頁
+.swiper-button-next{
+  position: unset;
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
+}
 .swiper-button-next::after {
   content: ""; //消除預設箭頭
   font-size: 0; //使外層區塊可以與 icon 一致
 }
-.btn-next-position {
-  position: absolute;
-  top: 100%;
-  left: 316px;
-}
+// .btn-next-position {
+//   position: absolute;
+//   top: 100%;
+//   left: 316px;
+// }
 
 // 頁次樣式 
-.swiper-pagination-custom {
-  position: absolute;
-  width: auto !important;
-  bottom: 0 !important;
-  left: 236px !important;
+.swiper-buttons{
+  .swiper-pagination-custom {
+    position: unset;
+    width: auto;
+  }
 }
 .swiper-pagination-bullet {
   background-color: #62DB54;
@@ -91,6 +113,7 @@
 .swiper-pagination-bullet-active {
   width: 16px;
   border-radius: 8px;
+  transition: width .2s ease;
 }
 
 // 客製箭頭綠色
@@ -102,4 +125,15 @@
 .icon-size {
   width: 24px;
   height: 24px;
+}
+
+// 第二個 swiper
+.swiper-share{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
