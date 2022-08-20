@@ -9,6 +9,21 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 8,
   spaceBetween: 16,
   freeMode: true,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    360: {
+      slidesPerView: 2,
+      spaceBetween: 8
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 8
+    },
+    992: {
+      slidesPerView: 8,
+    },
+  },
 
   // If we need pagination
   pagination: {
@@ -55,9 +70,9 @@ const shareSwiper = new Swiper('.shareSwiper', {
   },
 
   // Autoplay
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
 
   // Fade
   effect: 'fade',

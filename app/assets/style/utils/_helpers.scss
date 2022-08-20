@@ -21,12 +21,31 @@
   font-size: 18px;
   line-height: 1.44;
 }
+.card-text-size-sm-14{
+  font-size: 14px;
+  line-height: 1.44;
+  @include screen-lg{
+    font-size: 18px;
+  }
+}
 
 .w-14p66 {
-  width: 14.66%;
+  width: 53.66%;
+  @include screen-md{
+    width: 27.66%;
+  }
+  @include screen-lg{
+    width: 14.66%;
+  }
 }
 .w-70{
   width: 70%;
+}
+.w-sm-100-lg-25{
+  width: 100%;
+  @include screen-lg{
+    width: 25%;
+  }
 }
 
 .profile-size{
@@ -66,11 +85,18 @@
       content: "";
       position: absolute;
       bottom: -16px;
-      left: 0;
       display: inline-block;
       background-color: #62DB54;
       width: 50px;
       height: 3px;
+      @include screen-sm{
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @include screen-lg{
+        left: 0;
+        transform: none;
+      }
     }
 }
 .border-bottom-green-center{
@@ -93,11 +119,18 @@
     content: "";
     position: absolute;
     bottom: -16px;
-    left: 0;
+    left: 50%;
     display: inline-block;
     background-color: #fff;
     width: 50px;
     height: 3px;
+    transform: translate(-50%, -50%);
+  }
+  @include screen-lg{
+    &::after{
+      left: 0;
+      transform: none;
+    }
   }
 }
 
@@ -247,12 +280,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 615px;
+    height: 270px;
     background-image: url('../images/info01.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: .5;
+  }
+  @include screen-lg{
+    &::after{
+      height: 615px;
+    }
   }
 }
 .bg-image-motivate{
@@ -266,12 +304,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 615px;
+    height: 270px;
     background-image: url('../images/info02.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: .5;
+  }
+  @include screen-lg {
+    &::after {
+      height: 615px;
+    }
   }
 }
 .bg-image-efficiency{
@@ -285,12 +328,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 615px;
+    height: 270px;
     background-image: url('../images/info03.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: .5;
+  }
+  @include screen-lg{
+    &::after{
+      height: 615px;
+    }
   }
 }
 .bg-image-advising{
@@ -304,12 +352,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 615px;
+    height: 270px;
     background-image: url('../images/info04.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: .5;
+  }
+  @include screen-lg{
+    &::after{
+      height: 615px;
+    }
   }
 }
 
@@ -332,29 +385,57 @@
   }
 }
 
-.hover-color-gradient{
+//*手把手帶你
+// 因為 large 和 small 的作用範圍不同，所以只在 small 時有此 border hover 效果，large 要消失
+.hover-color-sm-gradient{
   opacity: .5;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 12px;
-  &:hover{
-    border: 1px solid #62DB54;
-    transition: border .5s ease-in-out;
-    opacity: 1;
-    background: #000;
-    .color-gradient {
-      background: rgb(98, 219, 84);
-      background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
+  @include screen-sm {
+    &:hover{
+      border: 1px solid #62DB54;
+      transition: border .5s ease-in-out;
+      opacity: 1;
+      background: #000;
+      .color-gradient {
+        background: rgb(98, 219, 84);
+        background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
     }
   }
-}//手把手帶你
+  @include screen-lg{
+    &:hover{
+      border: 1px solid transparent;
+      background: none;
+    }
+  }
+}
+// 只在 large 時才套用
+.hover-color-lg-gradient {
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+
+  @include screen-lg {
+    &:hover {
+      border: 1px solid #62DB54;
+      background: #000;
+      transition: border .5s ease-in-out;
+    }
+  }
+}
+//*手把手帶你
 
 // 四大滿版區塊
 .height-615{
-  height: 615px;
+  height: 1080px;
+  @include screen-lg{
+    height: 615px;
+  }
 }
 .hover-opacity-bottom-green{
   &:hover{
@@ -367,11 +448,18 @@
         content: "";
         position: absolute;
         bottom: -16px;
-        left: 0;
+        left: 50%;
         display: inline-block;
         background-color: #62DB54;
         width: 50px;
         height: 3px;
+        transform: translate(-50%, -50%);
+      }
+      @include screen-lg{
+        &::after{
+          left: 0;
+          transform: none;
+        }
       }
     }
     .hover-color-green{

@@ -3,17 +3,28 @@ body{
 } /* 優先序：英文字體或字型數量低 -> 中文字體或字型數量高 -> 預設字體 */
 
 h1{
-  font-size: 48px;
   font-weight: bold;
   line-height: 1.45;
+  @include screen-sm{
+    font-size: 24px;
+  }
+  @include screen-lg{
+    font-size: 48px;
+  }
 }
 
 h2 {
   margin: 0;
-  font-size: 28px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bold;
-  line-height: 1.43;
+  line-height: 1.45;
+  @include screen-sm{
+    font-size: 24px;
+  }
+  @include screen-lg{
+    font-size: 28px;
+    line-height: 1.43;
+  }
 }
 
 h3 {
@@ -34,6 +45,12 @@ h5 {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.44;
+  // @include screen-sm{
+  //   font-size: 14px;
+  // }
+  // @include screen-lg {
+  //   font-size: 18px;
+  // }
 }
 
 mark {

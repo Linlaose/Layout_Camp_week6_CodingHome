@@ -32,7 +32,7 @@
 }
 
 // 為了顯示 swiper 外的 border，必須取消套件預設的 hidden
-.swiper {
+.overflow-visible {
   overflow: visible;
 }
 
