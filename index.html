@@ -21,40 +21,71 @@
   </head>
 
   <body class="bg-primary">
-    <header class="bg-secondary">
+    <header class="bg-secondary header-position-sticky">
       <nav class="navbar navbar-expand-lg navbar-light bg-secondary p-0">
-        <div
-          class="container d-flex justify-content-between p-0 py-6 px-3 mx-auto"
-        >
-          <a href="#">
-            <img class="logo-size" src="./assets/images/logo.svg" alt="logo" />
-          </a>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <ul class="d-flex gap-12">
-              <li class="nav-item">
-                <a
-                  class="active text-white header-a hover-pointer-opacity"
-                  aria-current="page"
-                  href="#"
-                  >首頁</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="text-white header-a hover-pointer-opacity" href="#"
-                  >課程介紹</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#" class="text-white header-a hover-pointer-opacity">
-                  <i class="material-icons align-middle me-1">
-                    account_circle </i
-                  >登入
+        <div class="container-fluid position-relative justify-content-center">
+          <div class="row w-100">
+            <div class="col-lg-12 px-lg-15">
+              <div class="d-flex justify-content-between p-0 py-6">
+                <a href="#">
+                  <img
+                    class="logo-size"
+                    src="./assets/images/logo.svg"
+                    alt="logo"
+                  />
+                  <img
+                    class="logo-sm-size"
+                    src="./assets/images/logo_sm.png"
+                    alt="logo-sm"
+                  />
                 </a>
-              </li>
-            </ul>
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                />
+                <div class="hamburger">
+                  <span class="hamburger-line mb-half hamburger-line1"></span>
+                  <span class="hamburger-line hamburger-line2"></span>
+                </div>
+                <div
+                  class="collapse navbar-collapse justify-content-end navbar-collapse-position"
+                  id="navbarSupportedContent"
+                >
+                  <ul
+                    class="d-lg-flex gap-lg-12 text-sm-center text-lg-left my-sm-3 my-lg-0"
+                  >
+                    <li class="nav-item hover-navbar-collapse">
+                      <a
+                        class="active text-white header-a hover-pointer-opacity d-sm-block d-lg-inline py-sm-3 py-lg-0"
+                        aria-current="page"
+                        href="#"
+                        >首頁</a
+                      >
+                    </li>
+                    <li class="nav-item hover-navbar-collapse">
+                      <a
+                        class="text-white header-a hover-pointer-opacity d-sm-block d-lg-inline py-sm-3 py-lg-0"
+                        href="#"
+                        >課程介紹</a
+                      >
+                    </li>
+                    <li class="nav-item hover-navbar-collapse">
+                      <a
+                        href="#"
+                        class="text-white header-a hover-pointer-opacity d-sm-block d-lg-inline py-sm-3 py-lg-0"
+                      >
+                        <i class="material-icons align-middle me-1">
+                          account_circle </i
+                        >登入
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -66,7 +97,7 @@
     class="container-fluid mx-auto p-0 px-3 bg-image-banner d-flex align-items-center"
   >
     <!-- banner -->
-    <div class="container">
+    <div class="container p-0">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <h1
@@ -455,7 +486,7 @@
       >
         <div class="intro z-index-2 text-sm-center text-lg-start">
           <span
-            class="material-icons opacity-50 hover-opacity-100 hover-color-green"
+            class="material-icons opacity-lg-50 hover-opacity-100 hover-color-green text-sm-green"
             >forum</span
           >
           <h3 class="border-bottom-white hover-border-bottom-green">
@@ -471,7 +502,7 @@
       >
         <div class="intro z-index-2 text-sm-center text-lg-start">
           <span
-            class="material-icons opacity-50 hover-opacity-100 hover-color-green"
+            class="material-icons opacity-lg-50 hover-opacity-100 hover-color-green text-sm-green"
             >tips_and_updates</span
           >
           <h3 class="border-bottom-white hover-border-bottom-green">
@@ -487,7 +518,7 @@
       >
         <div class="intro z-index-2 text-sm-center text-lg-start">
           <span
-            class="material-icons opacity-50 hover-opacity-100 hover-color-green"
+            class="material-icons opacity-lg-50 hover-opacity-100 hover-color-green text-sm-green"
             >thumb_up</span
           >
           <h3 class="border-bottom-white hover-border-bottom-green">
@@ -503,7 +534,7 @@
       >
         <div class="intro z-index-2 text-sm-center text-lg-start">
           <span
-            class="material-icons opacity-50 hover-opacity-100 hover-color-green"
+            class="material-icons opacity-lg-50 hover-opacity-100 hover-color-green text-sm-green"
             >group</span
           >
           <h3 class="border-bottom-white hover-border-bottom-green">
@@ -523,8 +554,8 @@
       <h2 class="border-bottom-green-center text-center text-white">
         文章分享
       </h2>
-      <div class="row mt-16">
-        <div class="col-lg-4">
+      <div class="row mt-sm-14 mt-lg-16">
+        <div class="col-lg-4 p-sm-0 p-lg-3">
           <div
             class="card border-transparent bg-primary border-radius-10 hover-border-radius"
           >
@@ -534,13 +565,11 @@
             <div class="bottom-right-radius"></div>
             <img
               src="./assets/images/article01.jpg"
-              class="card-img-top px-8 pt-8"
+              class="card-img-top px-lg-8 pt-lg-8"
               alt="article-1"
             />
-            <div class="card-body pb-8 px-8">
-              <h5 class="card-title pt-4 text-white m-0">
-                2022 前端開發者學習地圖
-              </h5>
+            <div class="card-body pb-sm-0 pb-lg-8 px-sm-0 px-lg-8">
+              <h5 class="card-title text-white m-0">2022 前端開發者學習地圖</h5>
               <p class="card-text pt-4 text-white m-0">
                 轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考
               </p>
@@ -552,7 +581,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mt-sm-6 mt-lg-0">
+        <div class="col-lg-4 mt-sm-6 mt-lg-0 p-sm-0 p-lg-3">
           <div
             class="card border-transparent bg-primary border-radius-10 hover-border-radius"
           >
@@ -562,13 +591,11 @@
             <div class="bottom-right-radius"></div>
             <img
               src="./assets/images/article02.jpg"
-              class="card-img-top px-8 pt-8"
+              class="card-img-top px-lg-8 pt-lg-8"
               alt="article-2"
             />
-            <div class="card-body pb-8 px-8">
-              <h5 class="card-title pt-4 text-white m-0">
-                軟體工程師有哪些類別
-              </h5>
+            <div class="card-body pb-sm-0 pb-lg-8 px-sm-0 px-lg-8">
+              <h5 class="card-title text-white m-0">軟體工程師有哪些類別</h5>
               <p class="card-text pt-4 text-white m-0">
                 軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務
               </p>
@@ -580,7 +607,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 mt-sm-6 mt-lg-0">
+        <div class="col-lg-4 mt-sm-6 mt-lg-0 p-sm-0 p-lg-3">
           <div
             class="card border-transparent bg-primary border-radius-10 hover-border-radius"
           >
@@ -590,11 +617,11 @@
             <div class="bottom-right-radius"></div>
             <img
               src="./assets/images/article03.jpg"
-              class="card-img-top px-8 pt-8"
+              class="card-img-top px-lg-8 pt-lg-8"
               alt="article-3"
             />
-            <div class="card-body pb-8 px-8">
-              <h5 class="card-title pt-4 text-white m-0">
+            <div class="card-body pb-sm-0 pb-lg-8 px-lg-8">
+              <h5 class="card-title text-white m-0">
                 免費 25 小時前端教學資源
               </h5>
               <p class="card-text pt-4 text-white m-0">

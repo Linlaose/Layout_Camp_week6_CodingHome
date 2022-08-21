@@ -62,9 +62,9 @@ var shareSwiper = new Swiper('.swiper-share', {
   //   el: '.swiper-scrollbar',
   // },
   // Autoplay
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000
+  },
   // Fade
   effect: 'fade',
   fadeEffect: {
