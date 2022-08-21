@@ -588,3 +588,14 @@
     color: #62DB54;
   }
 }
+.w-lg-168{
+  width: 140px;
+  @include screen-lg{
+    width: 168px;
+  }
+}
+.w-lg-60{
+  @include screen-lg{
+    width: 60%;
+  }
+}
