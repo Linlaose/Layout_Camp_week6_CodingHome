@@ -599,3 +599,33 @@
     width: 60%;
   }
 }
+.text-size-sm-20{
+  font-size: 20px;
+  line-height: 1.45;
+  @include screen-lg{
+    font-size: 24px;
+    line-height: 1.46;
+  }
+}
+
+// class-detail.html
+.text-gray{
+  color: #C1C1C1;
+}
+.w-lg-80{
+  width: 75%;
+  @include screen-lg{
+    width: 80%;
+  }
+}
+.w-lg-55{
+  @include screen-lg{
+    width: 55%;
+  }
+}
+.justify-content-lg-unset{
+  justify-content: space-between;
+  @include screen-lg{
+    justify-content: unset;
+  }
+}
