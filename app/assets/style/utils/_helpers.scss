@@ -578,3 +578,13 @@
     z-index: 2;
   }
 }
+
+// class.html
+.hover-botton-success{
+  border: 1px solid #fff;
+  color: #fff;
+  &:hover{
+    border-color: #62DB54;
+    color: #62DB54;
+  }
+}

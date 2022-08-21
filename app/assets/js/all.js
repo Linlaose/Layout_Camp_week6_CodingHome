@@ -2,6 +2,7 @@ $(function () {
   console.log('Hello Bootstrap5');
 });
 
+// 程式語言輪播
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -47,6 +48,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+// 學員分享輪播
 const shareSwiper = new Swiper('.swiper-share', {
   // Optional parameters
   direction: 'horizontal',
@@ -81,4 +83,27 @@ const shareSwiper = new Swiper('.swiper-share', {
   },
 });
 
-// 在使用第二個 swiper 的使用記得要把 HTML 那邊的 .swiper 也改掉，不然會一次吃兩個 swiper
+// 課程輪播
+const classSwiper = new Swiper('.swiper-class', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+
+  breakpoints: {
+    // when window width is >= 320px
+    360: {
+      slidesPerView: 2,
+      spaceBetween: 8
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 8
+    },
+    992: {
+      slidesPerView: 6,
+      spaceBetween: 16
+    },
+  },
+});
+
+// 在使用多個 swiper 的使用記得要把 HTML 那邊的 .swiper 也改掉，不然會一次吃兩個 swiper

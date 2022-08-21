@@ -105,11 +105,6 @@
   content: ""; //消除預設箭頭
   font-size: 0; //使外層區塊可以與 icon 一致
 }
-// .btn-prev-position {
-//   position: absolute;
-//   top: 100%;
-//   left: 196px;
-// }
 
 // 下一頁
 .swiper-button-next{
@@ -122,11 +117,6 @@
   content: ""; //消除預設箭頭
   font-size: 0; //使外層區塊可以與 icon 一致
 }
-// .btn-next-position {
-//   position: absolute;
-//   top: 100%;
-//   left: 316px;
-// }
 
 // 頁次樣式 
 .swiper-buttons{
@@ -162,6 +152,16 @@
   margin-right: auto;
   position: relative;
   overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+// 課程 swiper
+.swiper-class{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   list-style: none;
   padding: 0;
   z-index: 1;
