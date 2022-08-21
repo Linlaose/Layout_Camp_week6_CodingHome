@@ -16967,6 +16967,32 @@ small, .small {
   z-index: 2;
 }
 
+.hover-botton-success {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.hover-botton-success:hover {
+  border-color: #62DB54;
+  color: #62DB54;
+}
+
+.w-lg-168 {
+  width: 140px;
+}
+
+@media (min-width: 992px) {
+  .w-lg-168 {
+    width: 168px;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-lg-60 {
+    width: 60%;
+  }
+}
+
 button {
   font-size: 18px;
   line-height: 1.17;
@@ -17143,6 +17169,15 @@ button {
   margin-right: auto;
   position: relative;
   overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-class {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   list-style: none;
   padding: 0;
   z-index: 1;
