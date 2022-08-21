@@ -70,9 +70,9 @@ const shareSwiper = new Swiper('.swiper-share', {
   // },
 
   // Autoplay
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
 
   // Fade
   effect: 'fade',

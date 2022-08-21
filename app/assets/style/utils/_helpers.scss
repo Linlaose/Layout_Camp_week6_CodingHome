@@ -1,7 +1,18 @@
 // size
 .logo-size{
+  display: none;
   width: 175px;
   height: 42px;
+  @include screen-lg{
+    display: inline;
+  }
+}
+.logo-sm-size{
+  width: 24px;
+  height: 24px;
+  @include screen-lg{
+    display: none;
+  }
 }
 
 .icon-book-size{
@@ -131,7 +142,7 @@
     bottom: -16px;
     left: 50%;
     display: inline-block;
-    background-color: #fff;
+    background-color: #62DB54;
     width: 50px;
     height: 3px;
     transform: translate(-50%, -50%);
@@ -140,6 +151,7 @@
     &::after{
       left: 0;
       transform: none;
+      background-color: #fff;
     }
   }
 }
@@ -279,16 +291,16 @@
 // background-image
 .bg-image-banner{
   max-width: 100%;
-  height: 680px;
+  height: 336px;
   background-image: url('../images/bg_home.jpg');
   background-size: cover;
   background-position: center center;
+  @include screen-lg{
+    height: 680px;
+  }
 }
 .bg-image-project{
   position: relative;
-  &:hover::after{
-    opacity: 1;
-  }
   &::after{
     content: "";
     position: absolute;
@@ -303,6 +315,9 @@
     opacity: .5;
   }
   @include screen-lg{
+    &:hover::after{
+      opacity: 1;
+    }
     &::after{
       height: 615px;
     }
@@ -310,9 +325,6 @@
 }
 .bg-image-motivate{
   position: relative;
-  &:hover::after{
-    opacity: 1;
-  }
   &::after {
     content: "";
     position: absolute;
@@ -327,6 +339,9 @@
     opacity: .5;
   }
   @include screen-lg {
+    &:hover::after {
+      opacity: 1;
+    }
     &::after {
       height: 615px;
     }
@@ -334,9 +349,6 @@
 }
 .bg-image-efficiency{
   position: relative;
-  &:hover::after{
-    opacity: 1;
-  }
   &::after {
     content: "";
     position: absolute;
@@ -351,6 +363,9 @@
     opacity: .5;
   }
   @include screen-lg{
+    &:hover::after {
+      opacity: 1;
+    }
     &::after{
       height: 615px;
     }
@@ -358,9 +373,6 @@
 }
 .bg-image-advising{
   position: relative;
-  &:hover::after{
-    opacity: 1;
-  }
   &::after {
     content: "";
     position: absolute;
@@ -375,6 +387,9 @@
     opacity: .5;
   }
   @include screen-lg{
+    &:hover::after {
+      opacity: 1;
+    }
     &::after{
       height: 615px;
     }
@@ -401,34 +416,32 @@
 }
 
 //*手把手帶你
-// 因為 large 和 small 的作用範圍不同，所以只在 small 時有此 border hover 效果，large 要消失
+// 因為 large 和 small 的區塊作用範圍不同，所以只在 small 時有此 border hover 效果，large 要消失
 .hover-color-sm-gradient{
-  opacity: .5;
+  opacity: 1;
   color: #fff;
+  background-color: #202020;
   border: 1px solid transparent;
   border-radius: 12px;
-  @include screen-sm {
-    &:hover{
-      border: 1px solid #62DB54;
-      transition: border .5s ease-in-out;
-      opacity: 1;
-      background: #000;
-      .color-gradient {
-        background: rgb(98, 219, 84);
-        background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-      }
+  .color-gradient {
+    background: rgb(98, 219, 84);
+    background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    @include screen-lg{// 額外寫的 media 為了做出，手機無 hover 且 PC 版效果不被影響
+      color: #fff;
     }
   }
-  @include screen-lg{
+  @include screen-lg{// 額外寫的 media 為了做出，手機無 hover 且 PC 版效果不被影響
+    opacity: .5;
+    background-color: #2D2D2D;
     &:hover{
-      border: 1px solid transparent;
-      background: none;
+      opacity: 1;
     }
   }
 }
+
 // 只在 large 時才套用
 .hover-color-lg-gradient {
   color: #fff;
@@ -437,6 +450,9 @@
 
   @include screen-lg {
     &:hover {
+      .color-gradient{
+        color: transparent;
+      }
       border: 1px solid #62DB54;
       background: #000;
       transition: border .5s ease-in-out;
@@ -445,92 +461,107 @@
 }
 //*手把手帶你
 
-// 四大滿版區塊
+//* 四大滿版區塊
 .height-615{
   height: 1080px;
   @include screen-lg{
     height: 615px;
   }
 }
+.opacity-lg-50{
+  @include screen-lg{
+    opacity: .5;
+  }
+}
+.text-sm-green{
+  color: #62DB54;
+  @include screen-lg{
+    color: #fff;
+  }
+}
 .hover-opacity-bottom-green{
-  &:hover{
-    .hover-opacity-100 {
-        opacity: 1;
-      }//文字和 icon
-    .hover-border-bottom-green {
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -16px;
-        left: 50%;
-        display: inline-block;
-        background-color: #62DB54;
-        width: 50px;
-        height: 3px;
-        transform: translate(-50%, -50%);
-      }
-      @include screen-lg{
-        &::after{
-          left: 0;
-          transform: none;
+  @include screen-lg{
+    &:hover{
+      .hover-opacity-100 {
+          opacity: 1;
+        }//文字和 icon
+      .hover-border-bottom-green {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -16px;
+          left: 50%;
+          display: inline-block;
+          background-color: #62DB54;
+          width: 50px;
+          height: 3px;
+          transform: translate(-50%, -50%);
+        }
+        @include screen-lg{
+          &::after{
+            left: 0;
+            transform: none;
+          }
         }
       }
+      .hover-color-green{
+        color: #62DB54;
+      }//icon
     }
-    .hover-color-green{
-      color: #62DB54;
-    }//icon
   }
-}//四大滿版區塊
+}//* 四大滿版區塊
 
 // 四角落圓角 border
 .hover-border-radius{
-  &:hover{
-    .top-left-radius {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 32px;
-      height: 32px;
-      border-top: 2px solid #62DB54;
-      border-left: 2px solid #62DB54;
-      border-radius: 10px 0 0 0;
-      transition: border .1s;
-    }
-    .top-right-radius {
-      position: absolute;
-      top: 0;
-      right: 0;
-      border-top: 2px solid #62DB54;
-      border-right: 2px solid #62DB54;
-      border-radius: 0 10px 0 0;
-      width: 32px;
-      height: 32px;
-      transition: border .1s;
-    }
-    
-    .bottom-left-radius {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      border-bottom: 2px solid #62DB54;
-      border-left: 2px solid #62DB54;
-      border-radius: 0 0 0 10px;
-      width: 32px;
-      height: 32px;
-      transition: border .1s;
-    }
-    
-    .bottom-right-radius {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      border-bottom: 2px solid #62DB54;
-      border-right: 2px solid #62DB54;
-      border-radius: 0 0 10px 0;
-      width: 32px;
-      height: 32px;
-      transition: border .1s;
+  @include screen-lg{
+    &:hover{
+      .top-left-radius {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 32px;
+        height: 32px;
+        border-top: 2px solid #62DB54;
+        border-left: 2px solid #62DB54;
+        border-radius: 10px 0 0 0;
+        transition: border .1s;
+      }
+      .top-right-radius {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-top: 2px solid #62DB54;
+        border-right: 2px solid #62DB54;
+        border-radius: 0 10px 0 0;
+        width: 32px;
+        height: 32px;
+        transition: border .1s;
+      }
+      
+      .bottom-left-radius {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom: 2px solid #62DB54;
+        border-left: 2px solid #62DB54;
+        border-radius: 0 0 0 10px;
+        width: 32px;
+        height: 32px;
+        transition: border .1s;
+      }
+      
+      .bottom-right-radius {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-bottom: 2px solid #62DB54;
+        border-right: 2px solid #62DB54;
+        border-radius: 0 0 10px 0;
+        width: 32px;
+        height: 32px;
+        transition: border .1s;
+      }
     }
   }
 }
