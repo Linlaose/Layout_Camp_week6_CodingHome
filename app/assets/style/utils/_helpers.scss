@@ -99,6 +99,12 @@
 .border-gray{
   border-top: 1px solid #C1C1C1 !important;
 }
+.border-bottom-gray{
+  border-bottom: 1px solid #C1C1C1;
+}
+.border-left-green{
+  border-left: 2px solid #62DB54;
+}
 
 .border-bottom-green{
   position: relative;
@@ -627,5 +633,50 @@
   justify-content: space-between;
   @include screen-lg{
     justify-content: unset;
+  }
+}
+
+.class-item{
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #62DB54;
+  }
+}
+
+.text-size-24{
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.btn-size-32{
+  width: 32px;
+  height: 32px;
+}
+
+.btn-position{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-gradient-0deg {
+  background: rgb(98, 219, 84);
+  background: linear-gradient(0deg, rgba(98, 219, 84, 1) 0%, rgba(9, 172, 245, 1) 100%);
+}
+
+.price-position{
+  width: 416px;
+  @include screen-lg{
+    position: absolute;
+    top: 80px;
+    right: 0;
   }
 }
