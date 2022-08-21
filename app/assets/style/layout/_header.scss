@@ -9,3 +9,49 @@
   top: 0;
   z-index: 10;
 }
+
+.modal-rwd{
+  max-width: 362px;
+  @include screen-md{
+    max-width: 500px;
+  }
+  @include screen-lg{
+    max-width: 662px;
+  }
+}
+
+.px-lg-150{
+  padding-left: 24px;
+  padding-right: 24px;
+  @include screen-lg{
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+.login-pseudo{
+  &::before{
+    content: "";
+    width: 80px;
+    height: 1px;
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: middle;
+    background-color: #C1C1C1;
+    @include screen-lg{
+      width: 104px;
+    }
+  }
+  &::after{
+    content: "";
+    width: 80px;
+    height: 1px;
+    display: inline-block;
+    margin-left: 16px;
+    vertical-align: middle;
+    background-color: #C1C1C1;
+    @include screen-lg{
+      width: 104px;
+    }
+  }
+}

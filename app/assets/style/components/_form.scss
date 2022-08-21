@@ -1,0 +1,28 @@
+input[type="email"]{
+  &::placeholder{
+    color: #C1C1C1;
+  }
+  &::-moz-placeholder{
+    color: #C1C1C1;
+  }
+  &::-webkit-input-placeholder{
+    color: #C1C1C1;
+  }
+  &:focus{
+    border-color: #fff;
+  }
+}
+input[type="password"]{
+  &::placeholder{
+    color: #C1C1C1;
+  }
+  &::-moz-placeholder{
+    color: #C1C1C1;
+  }
+  &::-webkit-input-placeholder{
+    color: #C1C1C1;
+  }
+  &:focus{
+    border-color: #fff;
+  }
+}

@@ -15,6 +15,29 @@
   }
 }
 
+.icon-media-size{
+  width: 24px;
+  height: 24px;
+}
+.ms-fb{
+  margin-left: 32px;
+  @include screen-md{
+    margin-left: 105px;
+  }
+  @include screen-lg{
+    margin-left: 58px;
+  }
+}
+.ms-google{
+  margin-left: 32px;
+  @include screen-md{
+    margin-left: 105px;
+  }
+  @include screen-lg{
+    margin-left: 68px;
+  }
+}
+
 .icon-book-size{
   font-size: 80px;
 }
@@ -617,6 +640,9 @@
 // class-detail.html
 .text-gray-C1C1C1{
   color: #C1C1C1;
+  &:focus{
+    color: #C1C1C1;
+  }// 更改 input email、password 的打字顏色
 }
 .w-lg-80{
   width: 75%;
@@ -653,6 +679,11 @@
 .text-size-24{
   font-size: 24px;
   line-height: 1.17;
+}
+
+.btn-text-size-16{
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .btn-size-32{
