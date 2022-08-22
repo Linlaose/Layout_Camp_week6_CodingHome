@@ -1,0 +1,12 @@
+.price-menu--fixed{
+  position: relative;
+  @include screen-xxl{
+    width: 416px;
+    position: fixed;
+  }
+}
+
+.more-classes{
+  position: relative;
+  z-index: 2;
+}
