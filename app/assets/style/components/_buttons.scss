@@ -15,3 +15,23 @@ button {
     top: 30px;
   }
 }
+
+// .registration-payment-button{
+//   width: 140px;
+//   @include screen-lg{
+//     width: 144px;
+//   }
+// }
+.registration-payment-button-w-50{
+  width: 48%;
+  @include screen-lg{
+    width: auto;
+  }
+}
+
+.name-phone-w-lg-48{
+  width: 100%;
+  @include screen-lg{
+    width: 48%;
+  }
+}

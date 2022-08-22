@@ -1,0 +1,151 @@
+.progress {
+  position: relative;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+}
+.progress::before {
+  position: absolute;
+  content: "";
+  background-color: #C1C1C1;
+  width: 50%;
+  height: 2px;
+}
+.progress::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  background-color: #C1C1C1;
+  width: 50%;
+  height: 2px;
+}
+
+.number-one {
+  position: relative;
+  z-index: 2;
+  background-color: #62DB54;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  transform: translate(-10px, -10px);
+}
+.number-one::before {
+  content: attr(data-num);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+}
+.number-one::after {
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: #62DB54;
+  content: attr(data-content);
+  width: 64px;
+  transform: translate(-50%, 0);
+}
+
+.number-two {
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background-color: #1C1C1C;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #C1C1C1;
+  border-radius: 10px;
+  transform: translate(0, -10px);
+}
+.number-two::before {
+  content: attr(data-num);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+}
+.number-two::after {
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: attr(data-content);
+  width: 80px;
+  transform: translate(-50%, 0);
+  color: #C1C1C1;
+}
+
+.number-three {
+  position: relative;
+  z-index: 2;
+  background-color: #1C1C1C;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #C1C1C1;
+  border-radius: 10px;
+  transform: translate(10px, -10px);
+}
+.number-three::before {
+  content: attr(data-num);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+}
+.number-three::after {
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: attr(data-content);
+  display: block;
+  width: 64px;
+  color: #C1C1C1;
+  transform: translate(-50%, 0);
+}
+
+.prgress-padding-y{
+  padding-top: 33px;
+  padding-bottom: 43px;
+  @include screen-lg{
+    padding-bottom: 35px;
+  }
+}
+
+.registration-padding-end-120{
+  padding: 0;
+  @include screen-lg{
+    padding-right: 120px;
+
+  }
+}
+
+.row-bg-color{
+  background: #1C1C1C;
+  @include screen-lg{
+    background: transparent;
+  }
+}
+
+.col-bg-color{
+  background: transparent;
+  @include screen-lg{
+    background: #1C1C1C;
+  }
+}
+
+.content-padding-left{
+  padding: 0;
+  @include screen-lg{
+    padding-left: 114px;
+    padding-right: 32px;
+  }
+}
