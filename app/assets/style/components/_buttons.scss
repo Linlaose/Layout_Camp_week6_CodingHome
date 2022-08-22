@@ -6,3 +6,12 @@ button {
 .border-radius-4{
   border-radius: 4px;
 }
+
+.login-button__cancel--position{
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  @include screen-lg{
+    top: 30px;
+  }
+}
