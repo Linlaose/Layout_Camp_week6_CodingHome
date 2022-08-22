@@ -18510,6 +18510,18 @@ button {
   border-radius: 4px;
 }
 
+.login-button__cancel--position {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+
+@media (min-width: 992px) {
+  .login-button__cancel--position {
+    top: 30px;
+  }
+}
+
 @media (min-width: 992px) {
   .bg-image-swiper {
     height: 733px;
