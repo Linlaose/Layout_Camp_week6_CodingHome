@@ -18953,4 +18953,20 @@ input[type="password"]:focus {
   }
 }
 
+.price-menu--fixed {
+  position: relative;
+}
+
+@media (min-width: 1400px) {
+  .price-menu--fixed {
+    width: 416px;
+    position: fixed;
+  }
+}
+
+.more-classes {
+  position: relative;
+  z-index: 2;
+}
+
 /*# sourceMappingURL=all.css.map */
