@@ -98,8 +98,8 @@
     </header>
 
     
-<main>
-  <section class="container-fluid prgress-padding-y">
+<main class="position-relative">
+  <section class="container-fluid progress-padding-y progress-bg-black">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
@@ -120,14 +120,49 @@
       </div>
     </div>
   </section>
+  <section class="container-fluid registration-card-position">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 progress-bg-black">
+          <div
+            class="p-6 py-lg-12 px-lg-8 p-lg-12 bg-secondary registration-card-arrow"
+          >
+            <div>
+              <img
+                src="./assets/images/teacher01.jpg"
+                class="card-img-top border-radius50 profile-size mx-auto d-block"
+                alt="teacher_Belinda"
+              />
+            </div>
+            <div class="py-lg-0 justify-content-between mx-auto">
+              <h3
+                class="card-title pt-4 pt-lg-6 text-white m-0 text-size-sm-20 text-center"
+              >
+                基礎前端 - HTML
+              </h3>
+              <p class="card-text text-success pt-2 pt-lg-1 m-0 text-center">
+                前端語言
+              </p>
+              <p class="card-text pt-2 text-white notosans-regular">
+                帶領無基礎的平民老百姓，從最基礎的 HTML
+                語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section
-    class="container-fluid pt-11 pt-lg-12 bg-black registration-padding-end-120"
+    class="container-fluid pt-11 pt-lg-12 bg-black registration-padding-end-120 padding-bottom-lg-144"
   >
     <div class="container p-0 px-lg-3">
       <div
         class="row justify-content-end mx-3 mx-lg-0 pe-lg-0 ps-lg-3 row-bg-color"
       >
-        <div class="col-lg-8 offset-lg-3px-6 px-lg-0 py-lg-12 col-bg-color">
+        <div
+          class="col-lg-8 offset-lg-3px-6 px-lg-0 py-lg-12 pb-6 col-bg-color"
+        >
           <h3 class="text-white pt-6 pt-lg-0 m-0 text-center">課程報名</h3>
           <div class="btn-box content-padding-left">
             <h5 class="text-white mt-6 mt-lg-12">選擇付款方式</h5>
@@ -168,7 +203,7 @@
                   <label for="InputName" class="form-label">姓名</label>
                   <input
                     type="text"
-                    class="form-control bg-primary text-gray-C1C1C1"
+                    class="form-control bg-primary text-gray-C1C1C1 input-padding"
                     placeholder="請輸入姓名"
                     id="InputName"
                     aria-describedby="nameHelp"
@@ -178,7 +213,7 @@
                   <label for="InputMobile" class="form-label">電話</label>
                   <input
                     type="tel"
-                    class="form-control bg-primary text-gray-C1C1C1"
+                    class="form-control bg-primary text-gray-C1C1C1 input-padding"
                     placeholder="請輸入電話號碼"
                     id="InputMobile"
                     aria-describedby="emailHelp"
@@ -190,18 +225,18 @@
               <label for="Inputmail" class="form-label">Email</label>
               <input
                 type="email"
-                class="form-control bg-primary text-gray-C1C1C1"
+                class="form-control bg-primary text-gray-C1C1C1 input-padding"
                 placeholder="請輸入Email"
                 id="Inputmail"
                 aria-describedby="emailHelp"
               />
             </div>
-            <div class="mb-6 text-gray-C1C1C1">
-              <div class="name-phone d-lg-flex justify-content-between">
+            <div class="mb-4 mb-lg-6">
+              <div class="select-datepicker d-lg-flex justify-content-between">
                 <div class="name name-phone-w-lg-48 mt-4 mt-lg-6">
-                  <label class="form-label">課程</label>
+                  <label class="form-label text-gray-C1C1C1">課程</label>
                   <select
-                    class="form-select select-style"
+                    class="form-select select-style input-padding"
                     aria-label="Default select example"
                   >
                     <option selected>請選擇課程</option>
@@ -212,21 +247,49 @@
                   </select>
                 </div>
                 <div class="phone name-phone-w-lg-48 mt-4 mt-lg-6">
-                  <input type="text" name="foo" />
+                  <label
+                    class="form-label text-gray-C1C1C1 d-block"
+                    for="datepicker"
+                    >想預約的日期</label
+                  >
+                  <input
+                    class="bg-primary datepicker-border input-padding bottom-0 w-100"
+                    type="text"
+                    name="datepicker"
+                    id="datepicker"
+                    placeholder="請選擇日期"
+                  />
                 </div>
               </div>
             </div>
-            <button
-              type="submit"
-              class="btn btn-gradient border-radius-8 ms-lg-0 mt-4 mt-lg-2 p-0 d-lg-block w-100 mx-0"
+            <div class="text-gray-C1C1C1 notosans-regular">
+              <label for="Inputlocation" class="form-label">上課地點</label>
+              <input
+                type="text"
+                class="form-control bg-primary text-gray-C1C1C1 input-padding"
+                placeholder="請輸入上課地點"
+                id="Inputlocation"
+                aria-describedby="locationHelp"
+              />
+            </div>
+            <div
+              class="submit-box d-flex flex-wrap flex-lg-nowrap justify-content-between align-items-center mt-6"
             >
-              <a
-                class="d-block py-2 px-4 px-lg-12 hover-text-black"
-                href="checkout-registration.html"
+              <strong class="strong-text-18 text-white mb-6 mb-lg-0"
+                >NT$1600</strong
               >
-                登入
-              </a>
-            </button>
+              <button
+                type="submit"
+                class="btn btn-gradient border-radius-8 ms-lg-0 p-0 d-lg-block checkout-button mx-0"
+              >
+                <a
+                  class="d-block py-2 px-4 px-lg-12 hover-text-black"
+                  href="checkout-registration.html"
+                >
+                  前往結帳
+                </a>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -354,6 +417,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/locales/zh-TW.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

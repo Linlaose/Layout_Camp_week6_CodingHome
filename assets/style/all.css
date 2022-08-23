@@ -17642,9 +17642,16 @@ strong {
 }
 
 small, .small {
-  font-size: 16px;
-  line-height: 1.19;
+  font-size: 12px;
+  line-height: 1.17;
   color: #909090;
+}
+
+@media (min-width: 992px) {
+  small, .small {
+    font-size: 16px;
+    line-height: 1.19;
+  }
 }
 
 .logo-size {
@@ -18542,6 +18549,23 @@ button {
   }
 }
 
+.prev-btn,
+.view-switch,
+.next-btn {
+  border: 0;
+  background-color: #fff;
+}
+
+.checkout-button {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .checkout-button {
+    width: auto;
+  }
+}
+
 @media (min-width: 992px) {
   .bg-image-swiper {
     height: 733px;
@@ -18791,6 +18815,10 @@ input[type="password"]:focus {
   border-color: #fff;
 }
 
+input[type="text"] {
+  color: #C1C1C1;
+}
+
 input[type="text"]::-webkit-input-placeholder {
   color: #C1C1C1;
 }
@@ -18891,6 +18919,15 @@ input[type="email"]:focus {
   font-family: 'Noto Sans TC', sans-serif;
   color: #C1C1C1;
   background-color: #1C1C1C;
+}
+
+.input-padding {
+  padding: 7px 16px;
+}
+
+.strong-text-18 {
+  font-size: 18px;
+  line-height: 1.17;
 }
 
 .navbar {
@@ -19000,6 +19037,11 @@ input[type="email"]:focus {
   .hover-navbar-collapse:hover {
     background-color: #2D2D2D;
   }
+}
+
+.datepicker-border {
+  border: 1px solid #C1C1C1;
+  border-radius: 4px;
 }
 
 .index__h1 {
@@ -19233,14 +19275,24 @@ input[type="email"]:focus {
           transform: translate(-50%, 0);
 }
 
-.prgress-padding-y {
+.progress-padding-y {
   padding-top: 33px;
   padding-bottom: 43px;
 }
 
 @media (min-width: 992px) {
-  .prgress-padding-y {
+  .progress-padding-y {
     padding-bottom: 35px;
+  }
+}
+
+.progress-bg-black {
+  background-color: #000;
+}
+
+@media (min-width: 992px) {
+  .progress-bg-black {
+    background-color: transparent;
   }
 }
 
@@ -19282,6 +19334,56 @@ input[type="email"]:focus {
   .content-padding-left {
     padding-left: 114px;
     padding-right: 32px;
+  }
+}
+
+.padding-bottom-lg-144 {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  .padding-bottom-lg-144 {
+    padding-bottom: 144px;
+  }
+}
+
+@media (min-width: 992px) {
+  .registration-card-position {
+    position: absolute;
+    top: 353px;
+    left: 90px;
+  }
+}
+
+.registration-card-arrow {
+  position: relative;
+}
+
+.registration-card-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  width: 0;
+  height: 24px;
+  border-top: 12px solid transparent;
+  border-left: 12px solid #2D2D2D;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  -webkit-transform: translateX(-50%) rotate(90deg);
+      -ms-transform: translateX(-50%) rotate(90deg);
+          transform: translateX(-50%) rotate(90deg);
+}
+
+@media (min-width: 992px) {
+  .registration-card-arrow::after {
+    bottom: auto;
+    left: auto;
+    top: 50%;
+    right: -24px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 
