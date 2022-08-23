@@ -1,17 +1,17 @@
-.progress {
+.progress-payment {
   position: relative;
   display: flex;
   width: 85%;
   margin: 0 auto;
 }
-.progress::before {
+.progress-payment::before {
   position: absolute;
   content: "";
-  background-color: #C1C1C1;
+  background-color: #62DB54;
   width: 50%;
   height: 2px;
 }
-.progress::after {
+.progress-payment::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -21,7 +21,7 @@
   height: 2px;
 }
 
-.number-one {
+.payment-number-one {
   position: relative;
   z-index: 2;
   background-color: #62DB54;
@@ -30,7 +30,8 @@
   border-radius: 10px;
   transform: translate(-10px, -10px);
 }
-.number-one::before {
+
+.payment-number-one::before {
   // content: attr(data-num);
   // color: #fff;
   // position: absolute;
@@ -50,7 +51,8 @@
   transform-origin: 100%, 0%;
   transform: rotate(45deg);
 }
-.number-one::after {
+
+.payment-number-one::after {
   margin-top: 4px;
   position: absolute;
   top: 100%;
@@ -61,11 +63,11 @@
   transform: translate(-50%, 0);
 }
 
-.number-two {
+.payment-number-two {
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  background-color: #1C1C1C;
+  background-color: #62DB54;
   color: #FFFFFF;
   width: 20px;
   height: 20px;
@@ -73,7 +75,8 @@
   border-radius: 10px;
   transform: translate(0, -10px);
 }
-.number-two::before {
+
+.payment-number-two::before {
   content: attr(data-num);
   position: absolute;
   top: 50%;
@@ -81,7 +84,8 @@
   font-size: 12px;
   transform: translate(-50%, -50%);
 }
-.number-two::after {
+
+.payment-number-two::after {
   margin-top: 4px;
   position: absolute;
   top: 100%;
@@ -89,10 +93,10 @@
   content: attr(data-content);
   width: 80px;
   transform: translate(-50%, 0);
-  color: #C1C1C1;
+  color: #62DB54;
 }
 
-.number-three {
+.payment-number-three {
   position: relative;
   z-index: 2;
   background-color: #1C1C1C;
@@ -103,7 +107,8 @@
   border-radius: 10px;
   transform: translate(10px, -10px);
 }
-.number-three::before {
+
+.payment-number-three::before {
   content: attr(data-num);
   position: absolute;
   top: 50%;
@@ -111,7 +116,8 @@
   font-size: 12px;
   transform: translate(-50%, -50%);
 }
-.number-three::after {
+
+.payment-number-three::after {
   margin-top: 4px;
   position: absolute;
   top: 100%;
@@ -121,90 +127,4 @@
   width: 64px;
   color: #C1C1C1;
   transform: translate(-50%, 0);
-}
-
-
-
-.progress-padding-y{
-  padding-top: 33px;
-  padding-bottom: 43px;
-  @include screen-lg{
-    padding-bottom: 35px;
-  }
-}
-.progress-bg-black{
-  background-color: #000;
-  @include screen-lg{
-    background-color: transparent;
-  }
-}
-
-
-.registration-padding-end-120{
-  padding: 0;
-  @include screen-lg{
-    padding-right: 120px;
-
-  }
-}
-
-.row-bg-color{
-  background: #1C1C1C;
-  @include screen-lg{
-    background: transparent;
-  }
-}
-
-.col-bg-color{
-  background: transparent;
-  @include screen-lg{
-    background: #1C1C1C;
-  }
-}
-
-.content-padding-left{
-  padding: 0;
-  @include screen-lg{
-    padding-left: 114px;
-    padding-right: 32px;
-  }
-}
-
-.padding-bottom-lg-144{
-  padding-bottom: 40px;
-  @include screen-lg{
-    padding-bottom: 144px;
-  }
-}
-
-.registration-card-position{
-  @include screen-lg{
-    position: absolute;
-    top: 353px;
-    left: 56px;
-  }
-}
-
-.registration-card-arrow{
-  position: relative;
-  &::after{
-    content: "";
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    width: 0;
-    height: 24px;
-    border-top: 12px solid transparent;
-    border-left: 12px solid #2D2D2D;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    transform: translateX(-50%) rotate(90deg);
-    @include screen-lg{
-      bottom: auto;
-      left: auto;
-      top: 50%;
-      right: -36px;
-      transform: translateY(-50%);
-    }
-  }
 }
