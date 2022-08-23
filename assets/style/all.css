@@ -19393,4 +19393,152 @@ input[type="email"]:focus {
   }
 }
 
+.progress-payment {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.progress-payment::before {
+  position: absolute;
+  content: "";
+  background-color: #62DB54;
+  width: 50%;
+  height: 2px;
+}
+
+.progress-payment::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  background-color: #C1C1C1;
+  width: 50%;
+  height: 2px;
+}
+
+.payment-number-one {
+  position: relative;
+  z-index: 2;
+  background-color: #62DB54;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  -webkit-transform: translate(-10px, -10px);
+      -ms-transform: translate(-10px, -10px);
+          transform: translate(-10px, -10px);
+}
+
+.payment-number-one::before {
+  content: "";
+  color: #fff;
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  top: 15%;
+  left: 35%;
+  -webkit-transform-origin: 100%, 0%;
+      -ms-transform-origin: 100%, 0%;
+          transform-origin: 100%, 0%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.payment-number-one::after {
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: #62DB54;
+  content: attr(data-content);
+  width: 64px;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.payment-number-two {
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  background-color: #62DB54;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #C1C1C1;
+  border-radius: 10px;
+  -webkit-transform: translate(0, -10px);
+      -ms-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+.payment-number-two::before {
+  content: attr(data-num);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.payment-number-two::after {
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: attr(data-content);
+  width: 80px;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: #62DB54;
+}
+
+.payment-number-three {
+  position: relative;
+  z-index: 2;
+  background-color: #1C1C1C;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #C1C1C1;
+  border-radius: 10px;
+  -webkit-transform: translate(10px, -10px);
+      -ms-transform: translate(10px, -10px);
+          transform: translate(10px, -10px);
+}
+
+.payment-number-three::before {
+  content: attr(data-num);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.payment-number-three::after {
+  margin-top: 4px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  content: attr(data-content);
+  display: block;
+  width: 64px;
+  color: #C1C1C1;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
 /*# sourceMappingURL=all.css.map */
