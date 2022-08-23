@@ -107,3 +107,10 @@ const classSwiper = new Swiper('.swiper-class', {
 });
 
 // 在使用多個 swiper 的使用記得要把 HTML 那邊的 .swiper 也改掉，不然會一次吃兩個 swiper
+
+// DatePicker
+
+const elem = document.querySelector('input[name="foo"]');
+const datepicker = new Datepicker(elem, {
+  // ...options
+}); 
