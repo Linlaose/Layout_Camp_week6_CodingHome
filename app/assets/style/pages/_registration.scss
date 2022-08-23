@@ -112,13 +112,20 @@
   transform: translate(-50%, 0);
 }
 
-.prgress-padding-y{
+.progress-padding-y{
   padding-top: 33px;
   padding-bottom: 43px;
   @include screen-lg{
     padding-bottom: 35px;
   }
 }
+.progress-bg-black{
+  background-color: #000;
+  @include screen-lg{
+    background-color: transparent;
+  }
+}
+
 
 .registration-padding-end-120{
   padding: 0;
@@ -147,5 +154,44 @@
   @include screen-lg{
     padding-left: 114px;
     padding-right: 32px;
+  }
+}
+
+.padding-bottom-lg-144{
+  padding-bottom: 40px;
+  @include screen-lg{
+    padding-bottom: 144px;
+  }
+}
+
+.registration-card-position{
+  @include screen-lg{
+    position: absolute;
+    top: 353px;
+    left: 90px;
+  }
+}
+
+.registration-card-arrow{
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    width: 0;
+    height: 24px;
+    border-top: 12px solid transparent;
+    border-left: 12px solid #2D2D2D;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    transform: translateX(-50%) rotate(90deg);
+    @include screen-lg{
+      bottom: auto;
+      left: auto;
+      top: 50%;
+      right: -24px;
+      transform: translateY(-50%);
+    }
   }
 }

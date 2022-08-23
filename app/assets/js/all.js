@@ -110,7 +110,9 @@ const classSwiper = new Swiper('.swiper-class', {
 
 // DatePicker
 
-const elem = document.querySelector('input[name="foo"]');
+const elem = document.querySelector('input[name="datepicker"]');
 const datepicker = new Datepicker(elem, {
-  // ...options
+  autohide: true,
+  format: 'yyyy-mm-dd',
+  language: "zh-TW",
 }); 

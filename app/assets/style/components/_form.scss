@@ -26,8 +26,8 @@ input[type="password"]{
     border-color: #fff;
   }
 }
-
 input[type="text"] {
+  color: #C1C1C1;
   &::placeholder {
     color: #C1C1C1;
   }
@@ -44,7 +44,6 @@ input[type="text"] {
     border-color: #fff;
   }
 }
-
 input[type="tel"] {
   &::placeholder {
     color: #C1C1C1;
@@ -84,4 +83,13 @@ input[type="email"] {
   font-family: 'Noto Sans TC', sans-serif;
   color: #C1C1C1;
   background-color: #1C1C1C;
+}
+
+.input-padding {
+  padding: 7px 16px; // padding-y 因為 border 的關係 (8-1)
+}
+
+.strong-text-18{
+  font-size: 18px;
+  line-height: 1.17;
 }

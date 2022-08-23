@@ -35,3 +35,19 @@ button {
     width: 48%;
   }
 }
+
+// datepicker
+
+.prev-btn,
+.view-switch,
+.next-btn{
+  border: 0;
+  background-color: #fff;
+}
+
+.checkout-button{
+  width: 100%;
+  @include screen-lg{
+    width: auto;
+  }
+}
