@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css"
+    />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
@@ -225,6 +229,8 @@
             <a
               class="btn-size-32 position-relative rounded-circle d-inline-block btn-gradient-0deg"
               href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
               ><span class="material-icons text-white fs-6 btn-position"
                 >chevron_right</span
               ></a
@@ -240,6 +246,8 @@
             <a
               class="btn-size-32 position-relative rounded-circle d-inline-block btn-gradient-0deg"
               href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
               ><span class="material-icons text-white fs-6 btn-position"
                 >chevron_right</span
               ></a
@@ -255,6 +263,8 @@
             <a
               class="btn-size-32 position-relative rounded-circle d-inline-block btn-gradient-0deg"
               href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
               ><span class="material-icons text-white fs-6 btn-position"
                 >chevron_right</span
               ></a
@@ -270,6 +280,8 @@
             <a
               class="btn-size-32 position-relative rounded-circle d-inline-block btn-gradient-0deg"
               href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
               ><span class="material-icons text-white fs-6 btn-position"
                 >chevron_right</span
               ></a
@@ -487,9 +499,14 @@
               </div>
               <button
                 type="submit"
-                class="btn btn-gradient border-radius-8 ms-lg-0 mt-4 mt-lg-2 py-2 px-4 px-lg-12 d-lg-block hover-text-black w-100 mx-0"
+                class="btn btn-gradient border-radius-8 ms-lg-0 mt-4 mt-lg-2 p-0 d-lg-block w-100 mx-0"
               >
-                登入
+                <a
+                  class="d-block py-2 px-4 px-lg-12 hover-text-black"
+                  href="checkout-registration.html"
+                >
+                  登入
+                </a>
               </button>
             </form>
           </div>
@@ -550,6 +567,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

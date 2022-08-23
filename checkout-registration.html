@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css"
+    />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
@@ -94,6 +98,142 @@
     </header>
 
     
+<main>
+  <section class="container-fluid prgress-padding-y">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="progress">
+            <div class="number-one" data-num="1" data-content="課程報名"></div>
+            <div
+              class="number-two"
+              data-num="2"
+              data-content="信用卡付款"
+            ></div>
+            <div
+              class="number-three"
+              data-num="3"
+              data-content="付款成功"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="container-fluid pt-11 pt-lg-12 bg-black registration-padding-end-120"
+  >
+    <div class="container p-0 px-lg-3">
+      <div
+        class="row justify-content-end mx-3 mx-lg-0 pe-lg-0 ps-lg-3 row-bg-color"
+      >
+        <div class="col-lg-8 offset-lg-3px-6 px-lg-0 py-lg-12 col-bg-color">
+          <h3 class="text-white pt-6 pt-lg-0 m-0 text-center">課程報名</h3>
+          <div class="btn-box content-padding-left">
+            <h5 class="text-white mt-6 mt-lg-12">選擇付款方式</h5>
+            <div
+              class="button-group d-flex d-lg-block flex-wrap justify-content-between"
+            >
+              <button
+                type="button"
+                class="btn hover-botton-success mt-4 p-4 py-lg-4 px-lg-8 border-radius-8 notosans-regular registration-payment-button h-auto registration-payment-button-w-50"
+              >
+                信用卡付款
+              </button>
+              <button
+                type="button"
+                class="btn hover-botton-success mt-4 p-4 py-lg-4 px-lg-8 border-radius-8 notosans-regular registration-payment-button h-auto registration-payment-button-w-50"
+              >
+                超商繳款
+              </button>
+              <button
+                type="button"
+                class="btn hover-botton-success mt-4 p-4 py-lg-4 px-lg-8 border-radius-8 notosans-regular registration-payment-button h-auto registration-payment-button-w-50"
+              >
+                ATM轉帳
+              </button>
+              <button
+                type="button"
+                class="btn hover-botton-success mt-4 p-4 py-lg-4 px-lg-8 border-radius-8 notosans-regular registration-payment-button h-auto registration-payment-button-w-50"
+              >
+                12期分期付款
+              </button>
+            </div>
+          </div>
+          <form class="content-padding-left mt-8">
+            <h5 class="text-white text-center text-lg-start">訂單資訊</h5>
+            <div class="mb-6 text-gray-C1C1C1">
+              <div class="name-phone d-lg-flex justify-content-between">
+                <div class="name name-phone-w-lg-48 mt-4 mt-lg-6">
+                  <label for="InputName" class="form-label">姓名</label>
+                  <input
+                    type="text"
+                    class="form-control bg-primary text-gray-C1C1C1"
+                    placeholder="請輸入姓名"
+                    id="InputName"
+                    aria-describedby="nameHelp"
+                  />
+                </div>
+                <div class="phone name-phone-w-lg-48 mt-4 mt-lg-6">
+                  <label for="InputMobile" class="form-label">電話</label>
+                  <input
+                    type="tel"
+                    class="form-control bg-primary text-gray-C1C1C1"
+                    placeholder="請輸入電話號碼"
+                    id="InputMobile"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="text-gray-C1C1C1 notosans-regular">
+              <label for="Inputmail" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control bg-primary text-gray-C1C1C1"
+                placeholder="請輸入Email"
+                id="Inputmail"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-6 text-gray-C1C1C1">
+              <div class="name-phone d-lg-flex justify-content-between">
+                <div class="name name-phone-w-lg-48 mt-4 mt-lg-6">
+                  <label class="form-label">課程</label>
+                  <select
+                    class="form-select select-style"
+                    aria-label="Default select example"
+                  >
+                    <option selected>請選擇課程</option>
+                    <option value="1">1堂50分鐘</option>
+                    <option value="2">3堂50分鐘</option>
+                    <option value="3">10堂50分鐘</option>
+                    <option value="4">20堂50分鐘</option>
+                  </select>
+                </div>
+                <div class="phone name-phone-w-lg-48 mt-4 mt-lg-6">
+                  <input type="text" name="foo" />
+                </div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-gradient border-radius-8 ms-lg-0 mt-4 mt-lg-2 p-0 d-lg-block w-100 mx-0"
+            >
+              <a
+                class="d-block py-2 px-4 px-lg-12 hover-text-black"
+                href="checkout-registration.html"
+              >
+                登入
+              </a>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
 
     <!-- Modal -->
     <div
@@ -145,9 +285,14 @@
               </div>
               <button
                 type="submit"
-                class="btn btn-gradient border-radius-8 ms-lg-0 mt-4 mt-lg-2 py-2 px-4 px-lg-12 d-lg-block hover-text-black w-100 mx-0"
+                class="btn btn-gradient border-radius-8 ms-lg-0 mt-4 mt-lg-2 p-0 d-lg-block w-100 mx-0"
               >
-                登入
+                <a
+                  class="d-block py-2 px-4 px-lg-12 hover-text-black"
+                  href="checkout-registration.html"
+                >
+                  登入
+                </a>
               </button>
             </form>
           </div>
@@ -208,6 +353,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
