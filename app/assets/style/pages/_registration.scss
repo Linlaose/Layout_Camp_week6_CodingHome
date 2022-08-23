@@ -31,13 +31,24 @@
   transform: translate(-10px, -10px);
 }
 .number-one::before {
-  content: attr(data-num);
+  // content: attr(data-num);
+  // color: #fff;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // font-size: 12px;
+  // transform: translate(-50%, -50%); 數字 1
+  content: "";
   color: #fff;
+  width: 5px;
+  height: 10px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 12px;
-  transform: translate(-50%, -50%);
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  top: 15%;
+  left: 35%;
+  transform-origin: 100%, 0%;
+  transform: rotate(45deg);
 }
 .number-one::after {
   margin-top: 4px;
@@ -168,7 +179,7 @@
   @include screen-lg{
     position: absolute;
     top: 353px;
-    left: 90px;
+    left: 56px;
   }
 }
 
@@ -190,7 +201,7 @@
       bottom: auto;
       left: auto;
       top: 50%;
-      right: -24px;
+      right: -36px;
       transform: translateY(-50%);
     }
   }
